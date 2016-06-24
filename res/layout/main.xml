@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_weight="0.11" android:background="#4e459184"
+            android:id="@+id/relativeLayout">
+        <Button
+                android:layout_width="158dp"
+                android:layout_height="wrap_content"
+                android:text="HH : MM : SS"
+                android:id="@+id/buttonTimer" android:layout_gravity="center_horizontal" android:layout_weight="0.11"
+                android:layout_centerVertical="true" android:layout_centerHorizontal="true"
+                android:background="#94ffce" android:textColor="#5e9a7a"
+                android:onClick="showTime"
+        />
+        <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonColor"
+                android:layout_gravity="right"
+                android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Colorful mode"
+                android:id="@+id/wantMoreColor"
+                android:layout_marginTop="42dp" android:layout_below="@+id/buttonTimer"
+                android:layout_centerHorizontal="true" android:singleLine="true" android:checked="false"
+                android:onClick="setRandomMode"
+        />
+    </RelativeLayout>
+</LinearLayout>
+
